@@ -115,7 +115,7 @@ checkOutTotal = checkOutTotal + subTotalPrice +deliveryCost;
    $('#pizzaCrustSelected').prop('selectedIndex',0);
     $('#toppingSelected').prop('selectedIndex',0);
      $('#deliveryOptionSelected').prop('selectedIndex',0);
-  // Proceed to Checkout Button
+  /*Proceed to Checkout Button*/
   $(document).ready(function(){
     $("#checkOut").click(function(){
       console.log(("Your delivery fee is" + " Ksh "+deliveryCost));
@@ -128,4 +128,93 @@ checkOutTotal = checkOutTotal + subTotalPrice +deliveryCost;
 event.preventDefault();
    });
   });
-
+/* Add Item Button*/
+$(document).ready(function(event){
+    $("#addItem").click(function(){
+      $("#addToCart").hide();
+  
+      var pizzaSize = $("#pizzaSizeSelected").val();
+      var crust = $("#pizzaCrustSelected").val();
+      var toppings = $("#toppingSelected").val();
+      var delivery = $("#deliveryOptionSelected").val();
+  
+      if((pizzaSize == "0") || (crust == "0") || (toppings == "0") || delivery == "0"){
+        alert("Please fill in all required fields!");
+        return;
+      }
+  var pname, cname, tname, subTotalPriceA
+      var pname = ($("#pizzaSizeSelected").find('option:selected').text());
+      var cname = ($("#pizzaCrustSelected").find('option:selected').text());
+      var tname =($("#toppingSelected").find('option:selected').text());
+      var subTotalPriceA = pizzaPrice + crustPrice + toppingPrice;
+  
+      var pizzaPrice = "";
+      switch(pizzaSize){
+      case "1":
+      pizzaPrice = 790;
+      break;
+      case "2":
+      pizzaPrice = 690;
+      break;
+      case "3":
+      pizzaPrice = 300;
+      break;
+      default:
+      console.log("No price");
+      }
+  
+      var crustPrice = "";
+      switch(crust){
+      case "1":
+      crustPrice =100;
+      break;
+      case "2":
+      crustPrice = 150;
+      break;
+      case "3":
+      crustPrice = 200;
+      break;
+      default:
+      console.log("No price");
+      }
+  
+      var toppingPrice = "";
+      switch(toppings){
+      case "1":
+      toppingPrice = 0;
+      break;
+      case "2":
+      toppingPrice = 99;
+      break;
+      case "3":
+      toppingPrice = 149;
+      break;
+      case "4":
+      toppingPrice = 199;
+      break;
+      default:
+      console.log("No price");
+      };
+  
+      var deliveryPrice = "";
+      switch (delivery) {
+      case "1":
+      deliveryPrice = 0;
+      break;
+      case "2":
+      deliveryPrice = 100;
+      break;
+      default:
+      console.log("No price");
+      };
+  
+        var newOrder= new Order(pname,cname,tname,subTotalPrice);
+  
+      $("#listOfItems").append('<tr><td id ="Pizza">' + "Pizza" + '<td id="pizSize">'+ newOrder.size + '</td><td id ="pizCrust">' + newOrder.crust + '</td><td id="pizTop">' + newOrder.toppings + '</td><td id ="subTPrice">' + newOrder.subTotalPrice +'</td></tr>');
+  
+  
+    });
+  });
+  
+  });
+  });
