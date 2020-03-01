@@ -25,3 +25,8 @@ $(document).ready(function(event){
       var toppings = $("#toppingSelected").val();
       var delivery = $("#deliveryOptionSelected").val();
 
+      if((pizzaSize == "0") || (crust == "0") || (toppings == "0") || delivery == "0"){
+        alert("Please fill in all required fields!");
+      } else {
+       $("#itemsCart").show();
+     };
