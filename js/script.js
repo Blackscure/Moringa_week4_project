@@ -17,5 +17,11 @@ $(document).ready(function(event){
     });
   });
   
+  /* add to cart button */
+$(document).ready(function(event){
+    $("#addToCart").click(function(){
+      var pizzaSize = $("#pizzaSizeSelected").val();
+      var crust = $("#pizzaCrustSelected").val();
+      var toppings = $("#toppingSelected").val();
+      var delivery = $("#deliveryOptionSelected").val();
 
-  
