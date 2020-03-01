@@ -9,4 +9,13 @@ function Order(pizzaSize, crust, toppings, subTotalPrice){
   this.subTotalPrice =subTotalPrice;
 }
 
- 
+/* Order Online Button */
+
+$(document).ready(function(event){
+    $("#orderNow").click(function(){
+      $("#orderForm").show();
+    });
+  });
+  
+
+  
