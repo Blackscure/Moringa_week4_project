@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,15 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The BlecherTown Pizza</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet"> 
-    <link href="css/Trade_Winds/TradeWinds-Regular.ttf">
-    <link href="css/Trade_Winds/OFL.txt">
-
 </head>
 <body>
   
@@ -46,5 +43,76 @@
           <h4>Best tasting pizza</h4>
           <p>A Pizza Inn pizza box might be one of the most recognisable icons of Africa. Whichever way you slice it, Pizza Inn is an industry leader in the quick service pizza game. The ?rst Pizza Inn outlet opened its doors in 1994 in Harare, Zimbabwe, and rose quickly in popularity. Serving hot oven-fresh pizza with its signature all-natural tomato sauce and using only the freshest ingredients, Pizza Inn has established itself at the top of the industry and is easily one of the first choices in quick service pizza in Africa.</p>
       </div>
+
+      <!--Oder section-->
+      <header class="masthead">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-9 text-center">
+              <div class="card" id=itemsCart>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <table class="table table-sm">
+                      <thead>
+                        <tr>
+                          <th>Item</th>
+                          <th>Size</th>
+                          <th>Crust</th>
+                          <th>Toppings</th>
+                          <th>Sub-Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="listOfItems">
+                        <tr>
+                          <td id ="Pizza">Pizza</td>
+                          <td id="pizSize"></td>
+                          <td id="pizCrust"></td>
+                          <td id="pizTop"></td>
+                          <td id="subTPrice"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p id=deliveryCost></p>
+                    <p id=totalCost></p>
+                  <footer class="blockquote-footer"><cite title="Source Title"></cite></footer>
+                  <button type="button" class="btn btn-outline-info" id="addItem">Add Item</button>
+                  <a href="#" class="btn btn-primary" id= checkOut>Proceed to checkout</a>
+                  </blockquote>
+                </div>
+                </div>
+              <p><button type="button" class="btn btn-outline-info" id="orderNow">Order now</button></p>
+            </div>
+            <div class="col-3 text-center" id="orderForm">
+                <h3>Order Request</h3>
+                <select class="browser-default custom-select mb-4" id="pizzaSizeSelected">
+                  <option value="0" selected >Choose your pizza size</option>
+                  <option value="1">Small</option>
+                  <option value="2">Medium </option>
+                  <option value="3">Large</option>
+                </select>
+                <select class="browser-default custom-select mb-4" id="pizzaCrustSelected">
+                  <option value="0" selected>Choose your spice preference</option>
+                  <option value="1" class= "Crispy">Crispy</option>
+                  <option value="2" Class ="Stuffed">Stuffed</option>
+                  <option value="3" Class="Gluteen-Free">Gluteen-free</option>
+                </select>
+                <select class="browser-default custom-select mb-4" id="toppingSelected">
+                  <option value="0" selected>Choose topings</option>
+                  <option value="1" class ="None">Watermelon</option>
+                  <option value="2"class="Cocktail">Onions</option>
+                  <option value="3" class="Soda">Garlic</option>
+                  <option value="4"class="Water">Biitroot</option>
+                </select>
+                <select class="browser-default custom-select mb-4" id="deliveryOptionSelected">
+                  <option value="0" selected>Choose your delivery option</option>
+                  <option value="1">Collection</option>
+                  <option value="2">Delivery</option>
+                </select>
+                <button type="button" class="btn btn-outline-info" id="addToCart" reset()>Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </header>
 </body>
 </html>
+
