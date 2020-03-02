@@ -25,7 +25,7 @@ This is a simple site whre usere are able to place an ordr fo whatever they want
 5. css
 
 ## Link to live site on GitHub Pages
-[View the page](https://github.com/Blackscure/Moringa_week4_project )
+[View the page](https://blackscure.github.io/Moringa_week4_project/)
 
 ## Lisence
 [Lisence](/LISENCE)
