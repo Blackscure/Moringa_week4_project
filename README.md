@@ -28,7 +28,7 @@ This is a simple site whre usere are able to place an ordr fo whatever they want
 [View the page](https://blackscure.github.io/Moringa_week4_project/)
 
 ## Lisence
-[Lisence](./LISENCE)
+[Lisence](./LICENSE)
 
 
 
