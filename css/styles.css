@@ -40,7 +40,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: wheat;
-    font-size: 24px;
+    font-size: 14px;
+    font-family: 'Trade Winds', serif;
+    text-shadow: 3px 3px 3px red;
 }
 
 /**********logo*********/
@@ -64,7 +66,8 @@ header {
     color:#fff;
     text-align: center;
     padding-top: 47px;
-    font-family: 'Trade Winds', ;
+    font-family: 'Trade Winds',serif ;
+    text-shadow: 3px 3px 3px red;
 }
 
 /*******About Us*****/
@@ -75,63 +78,8 @@ header {
 }
 
 #about h4{
-    color: wheat;;
+    color: wheat;
+
 }
  
-/*
-.content {
-    width: 94%;
-    margin: 4em auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-}
-
  
- 
-
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
-}
-
-@media(max-width: 786px) {
-
-    .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 16px;
-    }
-
-    nav ul {
-          max-height: 0px;
-          background: #000;
-    }
-
-    nav.black ul {
-          background: #000;
-    }
-
-    .showing {
-          max-height: 34em;
-    }
-
-    nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
-    }
-
-    .menu-icon {
-          display: block;
-    }
-
-}
