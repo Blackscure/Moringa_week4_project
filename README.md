@@ -25,10 +25,10 @@ This is a simple site whre usere are able to place an ordr fo whatever they want
 5. css
 
 ## Link to live site on GitHub Pages
-[View the page]( . )
+ 
 
 ## Lisence
-[Lisence](/LISENCE)
+[Lisence](./LICENSE)
 
 
 
