@@ -1,0 +1,17 @@
+body{
+    padding-top: 70px;
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("/images/dol.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    opacity: 0.6;
+  }
+
+  .head h4{
+      font-size: 27px;
+      text-align: center;
+      text-shadow: 2px 2px 2px red;
+  }
