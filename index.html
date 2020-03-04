@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The BlecherTown Pizza</title>
+<<<<<<< HEAD
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,8 +15,17 @@
     <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet"> 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+=======
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link  href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link  href="/css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+>>>>>>> master
 </head>
 <body>
+<<<<<<< HEAD
   
     <!--Navbar-->
     <div class="wrapper">
@@ -119,6 +129,80 @@
     </div>
       <script src="js/jquery-3.4.1.js"></script>
       <script src="js/scripts.js"></script>
+=======
+        <div class="container">
+        <header class="head">
+            <h4>The BlecherTown Pizza</h4>
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-9 text-center">
+                <div class="card" id=itemsCart>
+                  <div class="card-header">Your Order</div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <table class="table table-sm">
+                        <thead>
+                          <tr>
+                            <th>Item</th>
+                            <th>Size</th>
+                            <th>Crust</th>
+                            <th>Toppings</th>
+                            <th>Sub-Total</th>
+                          </tr>
+                        </thead>
+                        <tbody id="listOfItems">
+                          <tr>
+                            <td id ="Pizza">Pizza</td>
+                            <td id="pizSize"></td>
+                            <td id="pizCrust"></td>
+                            <td id="pizTop"></td>
+                            <td id="subTPrice"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p id=deliveryCost></p>
+                      <p id=totalCost></p>
+                    <footer class="blockquote-footer"><cite title="Source Title"></cite></footer>
+                    <button type="button" class="btn btn-outline-info" id="addItem">Add Item</button>
+                    <a href="#" class="btn btn-primary" id= checkOut>Proceed to checkout</a>
+                    </blockquote>
+                  </div>
+                  </div><br>
+                <p><button type="button" class="btn btn-outline-info" id="orderNow">Order now</button></p>
+              </div>
+              <div class="col-3 text-center" id="orderForm">
+                  <h3>Order Request</h3>
+                  <select class="browser-default custom-select mb-4" id="pizzaSizeSelected">
+                    <option value="0" selected >Choose your pizza size</option>
+                    <option value="1">Mega Size</option>
+                    <option value="2">Medium Size</option>
+                    <option value="3">Budget Size</option>
+                  </select>
+                  <select class="browser-default custom-select mb-4" id="pizzaCrustSelected">
+                    <option value="0" selected>Choose your spice preference</option>
+                    <option value="1" class= "Crispy">Crispy</option>
+                    <option value="2" Class ="Stuffed">Stuffed</option>
+                    <option value="3" Class="Gluteen-Free">Gluteen-free</option>
+                  </select>
+                  <select class="browser-default custom-select mb-4" id="toppingSelected">
+                    <option value="0" selected>Choose a meal compliment</option>
+                    <option value="1" class ="None">None of this</option>
+                    <option value="2"class="Cocktail">Cocktail-300ml</option>
+                    <option value="3" class="Soda">Soda-500ml</option>
+                    <option value="4"class="Water">Water-500ml</option>
+                  </select>
+                  <select class="browser-default custom-select mb-4" id="deliveryOptionSelected">
+                    <option value="0" selected>Choose your delivery option</option>
+                    <option value="1">Collection</option>
+                    <option value="2">Delivery</option>
+                  </select>
+                  <button type="button" class="btn btn-outline-info" id="addToCart" reset()>Add to cart</button>
+              </div>
+            </div>
+         
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/scripts.js"></script>
+>>>>>>> master
 </body>
 </html>
 

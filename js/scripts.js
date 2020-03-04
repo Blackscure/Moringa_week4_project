@@ -38,9 +38,15 @@ $(document).ready(function(event){
 // alerting delivery option
 var deliveryCost=""
 if(delivery == "2"){
+<<<<<<< HEAD
   var location = prompt("Enter delivery loaction")
   var deliveryCost = parseInt(150);
 alert("Cool, Your order shall be delivered at" + " " +location)
+=======
+  var location = prompt("Where would you want your delivery done?")
+  var deliveryCost = parseInt(150);
+alert("Confirmed, Your order shall be delivered at" + " " +location)
+>>>>>>> master
 } else {
   var deliveryCost = parseInt(0);
 };
@@ -123,12 +129,21 @@ checkOutTotal = checkOutTotal + subTotalPrice +deliveryCost;
   $(document).ready(function(){
     $("#checkOut").click(function(){
       console.log(("Your delivery cost is" + " KES "+deliveryCost));
+<<<<<<< HEAD
          $("#deliveryCost").append("delivery fee" + " KES "+deliveryCost);
         console.log("Total Amount Payable =" +checkOutTotal);
           $("#totalCost").append("Total Amount Payable = KES" +checkOutTotal);
      var client = prompt("Username?");
      var Contact = prompt("For easier communcation, provide us with your contact as well");
   alert("Thank you" + " " +client+"," + " "+ "Welcome back to enjoy our servises")
+=======
+         $("#deliveryCost").append("Your delivery cost is" + " KES "+deliveryCost);
+        console.log("Total Amount Payable =" +checkOutTotal);
+          $("#totalCost").append("Total Amount Payable = KES" +checkOutTotal);
+     var client = prompt("Your name Please?");
+     var Contact = prompt("For easier communcation, provide us with your contact as well");
+  alert("Thank you" + " " +client+"," + " "+ "Enjoy the Meal, Prepare the Total amount billed, Delivery shall be done within 20 minutes. Be sure to give us feedback")
+>>>>>>> master
 event.preventDefault();
    });
   });
@@ -224,4 +239,8 @@ var pname, cname, tname, subTotalPriceA
 });
 
 });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> master
